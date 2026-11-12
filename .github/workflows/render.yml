@@ -1,6 +1,12 @@
 name: Render Short
 
 on:
+  # Automatic: add or change manifests/<VIDEO_ID>.json and it renders.
+  push:
+    branches: [main]
+    paths:
+      - "manifests/*.json"
+  # Manual fallback: paste a manifest by hand.
   workflow_dispatch:
     inputs:
       video_id:
@@ -21,6 +27,8 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - uses: actions/setup-python@v5
         with:
@@ -32,23 +40,33 @@ jobs:
           sudo apt-get install -y -qq ffmpeg fonts-montserrat
           pip install --quiet faster-whisper
 
-      - name: Write manifest
+      - name: Collect manifests to render
         env:
-          MANIFEST_JSON: ${{ inputs.manifest_json }}
-        run: printf '%s' "$MANIFEST_JSON" > manifest.json
-
-      - name: Render
-        env:
+          EVENT: ${{ github.event_name }}
           VIDEO_ID: ${{ inputs.video_id }}
-        run: python render.py manifest.json --out "${VIDEO_ID}.mp4"
+          MANIFEST_JSON: ${{ inputs.manifest_json }}
+        run: |
+          mkdir -p todo
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            printf '%s' "$MANIFEST_JSON" > "todo/${VIDEO_ID}.json"
+          else
+            for f in $(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'manifests/*.json'); do
+              cp "$f" "todo/$(basename "$f")"
+            done
+          fi
+          ls -la todo
 
-      - name: Publish as pre-release
+      - name: Render and publish
         env:
           GH_TOKEN: ${{ github.token }}
-          VIDEO_ID: ${{ inputs.video_id }}
           RUN_ID: ${{ github.run_id }}
         run: |
-          gh release create "${VIDEO_ID}-${RUN_ID}" "${VIDEO_ID}.mp4" \
-            --prerelease --title "${VIDEO_ID}" \
-            --notes "Rendered by workflow run ${RUN_ID}. Pending approval."
-          echo "Download: https://github.com/${GITHUB_REPOSITORY}/releases/download/${VIDEO_ID}-${RUN_ID}/${VIDEO_ID}.mp4"
+          shopt -s nullglob
+          for m in todo/*.json; do
+            id="$(basename "$m" .json)"
+            python render.py "$m" --out "${id}.mp4"
+            gh release create "${id}-${RUN_ID}" "${id}.mp4" \
+              --prerelease --title "${id}" \
+              --notes "Rendered by workflow run ${RUN_ID}. Pending approval."
+            echo "Download: https://github.com/${GITHUB_REPOSITORY}/releases/download/${id}-${RUN_ID}/${id}.mp4"
+          done

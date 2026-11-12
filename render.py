@@ -45,7 +45,14 @@ def probe_duration(path):
 
 def build_segment(src, dur, seek, dest):
     """Crop/scale to 1080x1920 @30fps, trim to dur, hold last frame if short."""
-    vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,"
+    stretch = ""
+    try:
+        cd = probe_duration(src) - seek
+        if cd > 0.5 and dur > cd:
+            stretch = f"setpts={min(dur / cd, 1.5):.4f}*PTS,"
+    except Exception:
+        pass
+    vf = (f"{stretch}scale={W}:{H}:force_original_aspect_ratio=increase,"
           f"crop={W}:{H},fps={FPS},setsar=1,"
           f"tpad=stop_mode=clone:stop_duration={dur}")
     run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(seek), "-i", src,
@@ -178,6 +185,20 @@ def main():
 
     tmp = tempfile.mkdtemp(prefix="ld_")
     audio = fetch(mf["audio"], os.path.join(tmp, "voice.wav"))
+
+    if mf.get("fit_audio"):
+        # scene "duration" values are relative weights (e.g. word counts);
+        # text "start"/"duration" are fractions of their scene.
+        target = probe_duration(audio) + mf.get("tail", 0.5)
+        total_w = sum(sc["duration"] for sc in mf["scenes"])
+        for sc in mf["scenes"]:
+            sc["duration"] = round(target * sc["duration"] / total_w, 2)
+            for ov in sc.get("texts", []):
+                f0 = ov.get("start", 0.0)
+                f1 = ov.get("duration", 1.0 - f0)
+                ov["start"] = round(f0 * sc["duration"], 2)
+                ov["duration"] = round(f1 * sc["duration"], 2)
+        print("scene durations:", [sc["duration"] for sc in mf["scenes"]], flush=True)
 
     segs = []
     for i, sc in enumerate(mf["scenes"]):
