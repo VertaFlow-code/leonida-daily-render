@@ -1,0 +1,54 @@
+name: Render Short
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "Video ID, e.g. V001"
+        required: true
+        type: string
+      manifest_json:
+        description: "Manifest JSON (clips, audio, text overlays)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg, font and captions model runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-montserrat
+          pip install --quiet faster-whisper
+
+      - name: Write manifest
+        env:
+          MANIFEST_JSON: ${{ inputs.manifest_json }}
+        run: printf '%s' "$MANIFEST_JSON" > manifest.json
+
+      - name: Render
+        env:
+          VIDEO_ID: ${{ inputs.video_id }}
+        run: python render.py manifest.json --out "${VIDEO_ID}.mp4"
+
+      - name: Publish as pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VIDEO_ID: ${{ inputs.video_id }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          gh release create "${VIDEO_ID}-${RUN_ID}" "${VIDEO_ID}.mp4" \
+            --prerelease --title "${VIDEO_ID}" \
+            --notes "Rendered by workflow run ${RUN_ID}. Pending approval."
+          echo "Download: https://github.com/${GITHUB_REPOSITORY}/releases/download/${VIDEO_ID}-${RUN_ID}/${VIDEO_ID}.mp4"

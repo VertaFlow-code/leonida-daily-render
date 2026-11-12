@@ -1,0 +1,23 @@
+{
+  "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_102907_39ed5f58-a463-41b7-80ca-1df1cf3189a9.wav",
+  "captions": {"enabled": true, "font": "Montserrat", "font_size": 84, "word_color": "C8B58A", "line_color": "F2EFE9", "outline_color": "1A1A1A", "words_per_line": 3, "margin_v": 360, "model": "base.en"},
+  "scenes": [
+    {"clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_103137_88bfb162-fe87-43dd-b25c-0ddb629e0c2b.mp4", "duration": 5.0,
+     "texts": [{"text": "GTA 6", "x": 540, "y": 170, "size": 210}, {"text": "7 DAYS TO GO", "x": 540, "y": 450, "size": 84, "color": "C8B58A"}]},
+    {"clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_101207_348a7cb7-218a-4a38-bf3c-879a0beec7ba.mp4", "duration": 3.9,
+     "texts": [{"text": "MISTAKE 1", "x": 540, "y": 200, "size": 110}]},
+    {"clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_101828_69c17713-1b98-4dde-8b58-4482503b7f71.mp4", "duration": 4.9,
+     "texts": [{"text": "212 GB", "x": 540, "y": 200, "size": 190}, {"text": "PRELOAD NOW", "x": 540, "y": 440, "size": 80, "color": "C8B58A"}]},
+    {"clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_101823_9fd25710-008b-4a0b-b4e0-bbe3454c5c09.mp4", "duration": 2.4,
+     "texts": [{"text": "MISTAKE 2", "x": 540, "y": 200, "size": 110}]},
+    {"clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_103144_9a445242-e7f0-42a8-82a6-a900ff16cf10.mp4", "duration": 5.5,
+     "texts": [{"text": "PS5 + XBOX", "x": 540, "y": 200, "size": 130}, {"text": "SERIES X|S AT LAUNCH", "x": 540, "y": 380, "size": 68, "color": "C8B58A"}]},
+    {"clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_103142_11a48c79-c334-43a3-8e97-40f766dcf88e.mp4", "duration": 4.9,
+     "texts": [{"text": "MISTAKE 3", "x": 540, "y": 200, "size": 110}, {"text": "PRE-ORDER BEFORE NOV 20", "x": 540, "y": 360, "size": 64, "color": "C8B58A", "start": 2.0, "duration": 2.9}]},
+    {"clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_103140_53c2a4cd-cd2c-4f16-838b-d24b81d660f8.mp4", "duration": 5.9,
+     "texts": [
+       {"text": "WHICH MISTAKE DID\\NYOU ALMOST MAKE?", "x": 540, "y": 700, "size": 72, "color": "1A1A1A", "box": "F2EFE9", "start": 0.2, "duration": 5.7},
+       {"text": "COMMENT BELOW", "x": 540, "y": 950, "size": 70, "color": "F2EFE9", "box": "3A3A3A", "start": 0.2, "duration": 5.7},
+       {"text": "SUBSCRIBE", "x": 540, "y": 1130, "size": 84, "color": "FFFFFF", "box": "CC0000", "start": 2.4, "duration": 3.5}]}
+  ]
+}
