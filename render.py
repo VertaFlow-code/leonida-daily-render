@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Leonida Daily renderer.
 
-Builds a 1080x1920 Short from a manifest: scene clips + narration audio +
+Builds a 1080x1920 Short (or 1920x1080 when manifest "format" is "wide") from a manifest: scene clips + narration audio +
 text overlays + word-by-word captions. Everything is free software (FFmpeg,
 faster-whisper) so it can run on GitHub Actions at no cost.
 
@@ -16,6 +16,8 @@ import subprocess
 import sys
 import tempfile
 import urllib.request
+
+import cards
 
 W, H, FPS = 1080, 1920, 30
 
@@ -196,6 +198,40 @@ def align_script(words, script):
     return out
 
 
+def audio_fx(mf, audio, total, tmp):
+    """Voice plus optional synthesized SFX and an opt-in music bed.
+
+    manifest "audio_fx": {"sfx": true, "sfx_volume": 0.22, "music": "<url|path>", "music_volume": 0.07}
+    SFX are tiny ffmpeg-synthesized ticks on card/scene changes, so there is no licensing to worry about.
+    Music is only used when a URL/path is given (never by default).
+    """
+    fx = mf.get("audio_fx") or {}
+    extra, parts, labels = [], [], ["[1:a]"]
+    n = 2
+    if fx.get("sfx"):
+        vol = fx.get("sfx_volume", 0.22)
+        t = 0.0
+        for i, sc in enumerate(mf["scenes"]):
+            if i > 0:
+                ms = int(t * 1000)
+                extra += ["-f", "lavfi", "-t", "0.16", "-i", "sine=frequency=620:sample_rate=48000"]
+                parts.append(f"[{n}:a]afade=t=out:st=0.02:d=0.14,volume={vol},adelay={ms}|{ms}[s{n}]")
+                labels.append(f"[s{n}]")
+                n += 1
+            t += sc["duration"]
+    if fx.get("music"):
+        src = fetch(fx["music"], os.path.join(tmp, "bed.mp3")) if str(fx["music"]).startswith("http") else fx["music"]
+        extra += ["-stream_loop", "-1", "-i", src]
+        parts.append(f"[{n}:a]volume={fx.get('music_volume', 0.07)},afade=t=in:d=1.5[m{n}]")
+        labels.append(f"[m{n}]")
+        n += 1
+    if len(labels) == 1:
+        return extra, "[1:a]anull[a]"
+    graph = ";".join(parts) + (";" if parts else "")
+    graph += "".join(labels) + f"amix=inputs={len(labels)}:duration=first:normalize=0,apad[a]"
+    return extra, graph
+
+
 def main():
     args = sys.argv[1:]
     if not args:
@@ -212,6 +248,16 @@ def main():
     with open(manifest_path) as f:
         mf = json.load(f)
     cap = mf.get("captions", {})
+    global W, H
+    if mf.get("format") == "wide":
+        W, H = 1920, 1080
+        cap = dict(cap)
+        cap.setdefault("font_size", 64)
+        cap.setdefault("margin_v", 120)
+    vid_id = mf.get("id") or os.path.splitext(os.path.basename(manifest_path))[0]
+    theme = mf.get("card_theme")
+    motif = mf.get("card_motif")
+    card_log = []
 
     tmp = tempfile.mkdtemp(prefix="ld_")
     audio = fetch(mf["audio"], os.path.join(tmp, "voice.wav"))
@@ -232,9 +278,13 @@ def main():
 
     segs = []
     for i, sc in enumerate(mf["scenes"]):
-        src = fetch(sc["clip"], os.path.join(tmp, f"clip{i}.mp4"))
         seg = os.path.join(tmp, f"seg{i}.mp4")
-        build_segment(src, sc["duration"], sc.get("seek", 0), seg)
+        if sc.get("type") == "card":
+            info = cards.render_card_scene(sc, sc["duration"], seg, W, H, FPS, theme, motif, vid_id)
+            card_log.append(info)
+        else:
+            src = fetch(sc["clip"], os.path.join(tmp, f"clip{i}.mp4"))
+            build_segment(src, sc["duration"], sc.get("seek", 0), seg)
         segs.append(seg)
 
     listing = os.path.join(tmp, "list.txt")
@@ -266,8 +316,9 @@ def main():
         f.write(ass_header(cap) + "\n".join(events) + "\n")
 
     total = sum(sc["duration"] for sc in mf["scenes"])
-    run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", audio,
-         "-vf", f"ass={ass_path}", "-map", "0:v", "-map", "1:a",
+    extra_in, graph = audio_fx(mf, audio, total, tmp)
+    run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", audio] + extra_in +
+        ["-filter_complex", f"[0:v]ass={ass_path}[v];{graph}", "-map", "[v]", "-map", "[a]",
          "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
          "-c:a", "aac", "-b:a", "192k", "-t", f"{total:.2f}",
          "-movflags", "+faststart", out])

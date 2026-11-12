@@ -38,7 +38,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-montserrat
-          pip install --quiet faster-whisper
+          pip install --quiet faster-whisper pillow
 
       - name: Collect manifests to render
         env:
@@ -64,6 +64,11 @@ jobs:
           shopt -s nullglob
           for m in todo/*.json; do
             id="$(basename "$m" .json)"
+            mkdir -p qc
+            if ! python scripts/variety_check.py "$m" "qc/${id}_variety.json"; then
+              echo "::error::${id} failed the variety/sourcing guardrail, not rendering"
+              continue
+            fi
             python render.py "$m" --out "${id}.mp4"
             gh release create "${id}-${RUN_ID}" "${id}.mp4" \
               --prerelease --title "${id}" \
