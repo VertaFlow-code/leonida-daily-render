@@ -140,9 +140,16 @@ def overlay_events(scenes):
 
 
 def transcribe(audio_path, model_name="base.en"):
+    import numpy as np
     from faster_whisper import WhisperModel
+    # Decode with FFmpeg (16 kHz mono float32) so we never depend on PyAV.
+    raw = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", audio_path, "-f", "f32le",
+         "-ac", "1", "-ar", "16000", "-"],
+        check=True, capture_output=True).stdout
+    samples = np.frombuffer(raw, dtype=np.float32)
     model = WhisperModel(model_name, device="cpu", compute_type="int8")
-    segments, _ = model.transcribe(audio_path, word_timestamps=True, language="en")
+    segments, _ = model.transcribe(samples, word_timestamps=True, language="en")
     words = []
     for seg in segments:
         for w in seg.words:
