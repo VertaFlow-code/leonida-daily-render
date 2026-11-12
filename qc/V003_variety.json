@@ -1,0 +1,13 @@
+{
+ "layouts": [
+  "versus",
+  "flow",
+  "stat",
+  "timeline",
+  "list",
+  "cta"
+ ],
+ "errors": [],
+ "warnings": [],
+ "pass": true
+}
