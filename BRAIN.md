@@ -52,8 +52,11 @@ YPP: 1,000 subs + 4,000 watch hours or 10M Shorts views in 90 days. From 1 Feb 2
 ## Daily schedule (SAST)
 07:31 scheduled task researches, builds and QC-gates Short(s), emails video + approval pack. Altus: approve in the morning (about 3 min each), upload both in one sitting using Schedule (e.g. 17:00 and 20:00). Next day: send stats screenshot (or automatic once item 4 is done).
 
+## Topic test (Altus, 2026-11-12: V003 was "who cares")
+A Short must pass: would a GTA fan send this to a friend or argue about it in the comments? Prefer (1) things fans can do or lose out on, (2) surprising "wait, that's real?" moments, (3) live debates, (4) dated events. Avoid spec-sheet facts (platform settings, file sizes) unless they change what the viewer does. Plain words, one idea, no jargon. Source mining: Reddit, Mashable and some sites block my tools (only search snippets), so use Rockstar Newswire, IGN, Kotaku, Game Informer-based reports, DICE/venue pages; Altus can paste hot Reddit links. Always confirm with a primary source before use.
+
 ## Topic backlog (verify each before use)
-Map size vs earlier games; file size smaller in Australia/Japan; Miami IRL event; Rockstar recreated viral Miami clip; 30 FPS debate; Q-bank (ld_questions) has the ~50 most-asked questions.
+Rockstar GTA 6 Festival Nov 21 Miami ($60, lottery, 17+); Rockstar recreated viral West Coast Customs Miami clip in-game; weather (hurricanes, rain in one part of map only; Game Informer); five named Leonida regions; Map size vs earlier games; file size smaller in Australia/Japan; Miami IRL event; Rockstar recreated viral Miami clip; 30 FPS debate; Q-bank (ld_questions) has the ~50 most-asked questions.
 
 ## Rules learned (R017-R023 summary)
 Primary sources beat SEO sites (they conflict on preload dates). Single-source claims are not allowed. Hook must carry a surprise within 2 seconds. No stock/AI filler visuals. Captions use the written script, not raw whisper. Keep content out of caption/UI zones (y about 180-1350).
