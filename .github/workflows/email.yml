@@ -1,0 +1,50 @@
+name: Email approved Short
+
+# The review step (Claude) pushes approved/<VIDEO_ID>.txt only AFTER the video passes QC.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "approved/*.txt"
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "Video ID to email, e.g. V003"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Download latest release video and email it
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+          INPUT_ID: ${{ inputs.video_id }}
+          MAIL_USER: ${{ secrets.MAIL_USER }}
+          MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            ids="$INPUT_ID"
+          else
+            ids="$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'approved/*.txt' | xargs -n1 basename | sed 's/\.txt$//')"
+          fi
+          for id in $ids; do
+            tag="$(gh release list --limit 100 --json tagName,createdAt \
+              --jq "[.[] | select(.tagName | startswith(\"${id}-\"))] | sort_by(.createdAt) | reverse | .[0].tagName")"
+            echo "Using release $tag"
+            gh release download "$tag" -p "${id}.mp4" --clobber
+            url="https://github.com/${GITHUB_REPOSITORY}/releases/download/${tag}/${id}.mp4"
+            python3 email_video.py "${id}" "${id}.mp4" "${url}"
+          done

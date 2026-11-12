@@ -223,6 +223,11 @@ def main():
     else:
         words = []
 
+    try:
+        with open(out + ".words.json", "w") as f:
+            json.dump(words, f)
+    except Exception:
+        pass
     events = overlay_events(mf["scenes"]) + caption_events(words, cap)
     ass_path = os.path.join(tmp, "subs.ass")
     with open(ass_path, "w") as f:
