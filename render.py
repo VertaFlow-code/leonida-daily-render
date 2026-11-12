@@ -166,6 +166,36 @@ def transcribe(audio_path, model_name="base.en"):
     return words
 
 
+def align_script(words, script):
+    """Show the written script (correct spelling) on the whisper timings."""
+    import difflib
+    import re
+    norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
+    st = script.split()
+    if not words or not st:
+        return words
+    sm = difflib.SequenceMatcher(
+        None, [norm(w["w"]) for w in words], [norm(t) for t in st], autojunk=False)
+    out = []
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == "equal" or (tag == "replace" and i2 - i1 == j2 - j1):
+            for k in range(i2 - i1):
+                w = dict(words[i1 + k])
+                w["w"] = st[j1 + k]
+                out.append(w)
+        elif tag == "replace":
+            span, toks = words[i1:i2], st[j1:j2]
+            a0, a1 = span[0]["s"], span[-1]["e"]
+            step = (a1 - a0) / len(toks)
+            for k, t in enumerate(toks):
+                out.append({"w": t, "s": a0 + k * step, "e": a0 + (k + 1) * step})
+        elif tag == "insert":
+            base = out[-1]["e"] if out else 0.0
+            for k, t in enumerate(st[j1:j2]):
+                out.append({"w": t, "s": base + 0.05 * k, "e": base + 0.05 * (k + 1)})
+    return out
+
+
 def main():
     args = sys.argv[1:]
     if not args:
@@ -223,6 +253,8 @@ def main():
     else:
         words = []
 
+    if mf.get("script") and words:
+        words = align_script(words, mf["script"])
     try:
         with open(out + ".words.json", "w") as f:
             json.dump(words, f)
