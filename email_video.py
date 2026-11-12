@@ -35,10 +35,17 @@ msg["Subject"] = f"Leonida Daily - {vid} video ready"
 msg.set_content(
     f"{vid} has finished rendering and is attached ({size_mb:.1f} MB).\n\n"
     f"Full-quality file: {url}\n\n"
+    "Thumbnail attached too (9:16). YouTube only lets you add a custom Shorts thumbnail in\n"
+    "YouTube Studio on a computer (Content > Shorts > edit > Upload file).\n\n"
     "Watch it, verify the facts in the approval pack email, then upload.\n")
 with open(small, "rb") as f:
     msg.add_attachment(f.read(), maintype="video", subtype="mp4",
                        filename=f"{vid}.mp4")
+thumb = f"thumbs/{vid}.jpg"
+if os.path.exists(thumb):
+    with open(thumb, "rb") as f:
+        msg.add_attachment(f.read(), maintype="image", subtype="jpeg", filename=f"{vid}_thumbnail.jpg")
+    print("thumbnail attached")
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=120) as s:
     s.login(user, pw)
     s.send_message(msg)

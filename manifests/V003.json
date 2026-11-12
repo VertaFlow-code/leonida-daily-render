@@ -128,5 +128,12 @@
   "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
   "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
  ],
- "tighten_pauses": true
+ "tighten_pauses": true,
+ "thumbnail": {
+  "kicker": "GTA 6 \u00b7 Day one",
+  "line1": "XBOX ONE",
+  "line2": "CAN'T INSTALL IT",
+  "line3": "GTA 6",
+  "badge": "Stream only"
+ }
 }
