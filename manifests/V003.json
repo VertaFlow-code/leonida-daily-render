@@ -1,0 +1,132 @@
+{
+ "id": "V003",
+ "title": "An Xbox One can't install GTA 6, but it's getting it on day one",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261112_160036_47fc92b8-ab0e-4e14-b415-fd7912633a7f.wav",
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "script": "An Xbox One can't install GTA 6. It's getting it on day one anyway. The trick: the game runs on Microsoft's servers and streams to your console through Xbox Cloud Gaming. Xbox Series X and S install it natively. Pre-loading takes up to 212 gigabytes. Pre-load opened November 10th. Cloud playtime went on sale the 11th, in supported markets, no Game Pass needed. Streaming starts at 1 a.m. Eastern on November 19th. The catch: it streams at Xbox Series S graphics settings, and the game still has to be bought separately. Would you stream GTA 6 on an Xbox One? Comment below.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 14,
+   "kicker": "GTA 6 \u00b7 Day one",
+   "title": "Two ways to play",
+   "left": {
+    "label": "Xbox Series X|S",
+    "value": "NATIVE",
+    "sub": "Installs on the console"
+   },
+   "right": {
+    "label": "Xbox One",
+    "value": "STREAM",
+    "sub": "Runs on Microsoft's servers"
+   },
+   "source": "Xbox Wire, 10 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "flow",
+   "duration": 17,
+   "kicker": "How the Xbox One plays it",
+   "steps": [
+    {
+     "title": "Microsoft's servers",
+     "sub": "The game runs here"
+    },
+    {
+     "title": "Xbox Cloud Gaming",
+     "sub": "Streams it to you"
+    },
+    {
+     "title": "Your Xbox One",
+     "sub": "Shows the stream"
+    }
+   ],
+   "source": "Xbox Wire, 10 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 15,
+   "kicker": "Series X|S pre-load",
+   "value": "212 GB",
+   "sub": "Maximum size",
+   "note": "Depends on your device",
+   "source": "Rockstar Newswire, 3 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "timeline",
+   "duration": 23,
+   "kicker": "Key dates",
+   "events": [
+    {
+     "date": "Nov 10",
+     "label": "Pre-load opens",
+     "state": "done"
+    },
+    {
+     "date": "Nov 11",
+     "label": "Cloud playtime on sale (supported markets)",
+     "state": "done"
+    },
+    {
+     "date": "Nov 19 \u00b7 1 AM ET",
+     "label": "Cloud streaming starts",
+     "state": "next"
+    }
+   ],
+   "source": "Xbox Wire, 10 Nov 2026; Rockstar Newswire"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 19,
+   "kicker": "The catch",
+   "rows": [
+    {
+     "label": "Stream graphics",
+     "value": "Series S settings"
+    },
+    {
+     "label": "Game included",
+     "value": "No",
+     "tone": "bad"
+    },
+    {
+     "label": "Standard edition",
+     "value": "$79.99"
+    }
+   ],
+   "source": "Xbox Wire, 10 Nov 2026 (Microsoft Store listing)"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 11,
+   "headline": "Would you stream GTA 6 on an Xbox One?",
+   "comment": "Comment below",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+  "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+  "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+ ]
+}
