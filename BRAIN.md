@@ -1,6 +1,6 @@
 # Leonida Daily: BRAIN (read this first in every new chat or scheduled run)
 
-Last updated: 2026-11-12. Update this file whenever something durable changes.
+Last updated: 2026-11-12 (evening). Update this file whenever something durable changes.
 
 ## Mission
 Faceless, AI-run YouTube channel "Leonida Daily" (@leonidaDaily-o3w) about GTA / GTA 6 (launch Nov 19, 2026).
@@ -28,10 +28,26 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 - Gmail connector sends from Altusbantjes@vertaflows.com to altusbantjes16@gmail.com. YouTube uploads stay manual.
 
 ## Status
-- V001: posted (https://youtube.com/shorts/8f5-NEXPZjk), looked good technically.
-- V002 ("no disc" Short): FAILED QC and rejected by Altus. Do not post.
-- V003 (in progress): topic "GTA 6 isn't on Xbox One natively, but plays there via Xbox Cloud Gaming". Sources: Rockstar Newswire (Nov 10, "Pre-Load Grand Theft Auto VI Now"), Xbox Wire Nov 10 via Kotaku. Plan: versus card, flow card, $80 digital copy stat, cost list, CTA card. Thumbnail needed.
-- Card renderer cards.py written and wired into render.py; first local test done.
+- V001: posted (https://youtube.com/shorts/8f5-NEXPZjk).
+- V002 ("no disc"): rejected. Do not post.
+- V003 "An Xbox One can't install GTA 6, it's getting it day one anyway": rendered (42 s), QC gate passed after 1 loop, video and approval pack emailed 2026-11-12. Awaiting Altus upload (post tonight ~20:00 SAST). Sources: Xbox Wire 10 Nov, Rockstar Newswire 10 Nov and 3 Nov. After posting: log in ld_videos, check stats next day.
+- cards.py (7 layouts) and variety_check.py are in the repo and used by render.yml. Montserrat only exists on the runner, so local previews use DejaVu.
+
+## Upgrades added 2026-11-12 (all 8 picked by Altus)
+1. DONE: layout-variety + sourcing guardrail (scripts/variety_check.py, runs before render, writes qc/<id>_variety.json).
+2. PARTLY: hook rules. A real teardown of top GTA 6 Shorts needs outlier mining (item 5); vendor blogs (vidIQ, faceless.so) are weak sources. Provisional rules: lead with a rule/question/contrast, first spoken line short, title makes the same promise as the hook.
+3. DONE in renderer, not used yet: weekly long-form via manifest "format":"wide". Check seed_audio cost per minute before the first one (V003's 90 words cost 4.1 credits).
+4. BLOCKED on Altus: analytics feedback loop needs YouTube Analytics API OAuth. Until then he sends a stats screenshot next day.
+5. SCRIPT READY, untested: scripts/yt_outliers.py needs a free YT_API_KEY. Do not add search-heavy use: quota default is 10,000 units/day with a 100 search.list/day cap per the Data API page (verify on the Quotas page).
+6. Batch + scheduled uploads: Altus uploads the day's 2 Shorts in one sitting and uses the Schedule card in YouTube Studio (Create > Upload videos > Schedule). Uploads stay manual.
+7. DONE: audio_fx in manifest (synthesized SFX ticks on cuts), tighten_pauses to cut sentence gaps to 0.28 s. Music bed is opt-in only.
+8. TODO Altus: confirm the channel sits on its own Brand Account/Google account, separate from his personal/business accounts.
+
+## YouTube policy facts (press sources, re-verify on YouTube pages before relying)
+YPP: 1,000 subs + 4,000 watch hours or 10M Shorts views in 90 days. From 1 Feb 2027 new applicants need 8,000 hours or 20M Shorts views. Fan-funding tier (500 subs, 3 uploads, 3,000 hours or 3M Shorts views). Shorts hours do not count toward long-form hours. July 2026: no monetisation for generic, repetitive, template-based content. Realistic: apply before 1 Feb 2027 if thresholds are near, otherwise plan for the higher bar.
+
+## Daily schedule (SAST)
+07:31 scheduled task researches, builds and QC-gates Short(s), emails video + approval pack. Altus: approve in the morning (about 3 min each), upload both in one sitting using Schedule (e.g. 17:00 and 20:00). Next day: send stats screenshot (or automatic once item 4 is done).
 
 ## Topic backlog (verify each before use)
 Map size vs earlier games; file size smaller in Australia/Japan; Miami IRL event; Rockstar recreated viral Miami clip; 30 FPS debate; Q-bank (ld_questions) has the ~50 most-asked questions.
