@@ -30,7 +30,7 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 ## Status
 - V001: posted (https://youtube.com/shorts/8f5-NEXPZjk).
 - V002 ("no disc"): rejected. Do not post.
-- V003 "An Xbox One can't install GTA 6, it's getting it day one anyway": rendered (42 s), QC gate passed after 1 loop, video and approval pack emailed 2026-11-12. Awaiting Altus upload (post tonight ~20:00 SAST). Sources: Xbox Wire 10 Nov, Rockstar Newswire 10 Nov and 3 Nov. After posting: log in ld_videos, check stats next day.
+- V003 "An Xbox One can't install GTA 6, it's getting it day one anyway": rendered (42 s), QC gate passed after 1 loop, video and approval pack emailed 2026-11-12. POSTED by Altus 2026-11-12: https://youtube.com/shorts/34tRZOuBXT4 (I could not read title or stats from the page; check stats next day). Sources: Xbox Wire 10 Nov, Rockstar Newswire 10 Nov and 3 Nov. After posting: log in ld_videos, check stats next day.
 - cards.py (7 layouts) and variety_check.py are in the repo and used by render.yml. Montserrat only exists on the runner, so local previews use DejaVu.
 
 ## Upgrades added 2026-11-12 (all 8 picked by Altus)
@@ -42,6 +42,9 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 6. Batch + scheduled uploads: Altus uploads the day's 2 Shorts in one sitting and uses the Schedule card in YouTube Studio (Create > Upload videos > Schedule). Uploads stay manual.
 7. DONE: audio_fx in manifest (synthesized SFX ticks on cuts), tighten_pauses to cut sentence gaps to 0.28 s. Music bed is opt-in only.
 8. TODO Altus: confirm the channel sits on its own Brand Account/Google account, separate from his personal/business accounts.
+
+## Thumbnails (every post)
+thumbnail.py makes a 9:16 JPG per Short from the manifest "thumbnail" block (kicker, line1, line2 big accent, line3, badge), matching the video theme. render.yml generates it, attaches it to the release, commits thumbs/<id>.jpg; email_video.py attaches it. Every new manifest MUST include a "thumbnail" block (2-4 words per line). YouTube only allows custom Shorts thumbnails in Studio on a computer: Content > Shorts > edit > Thumbnail > Upload file (9:16, JPG/PNG, desktop limit 50 MB).
 
 ## YouTube policy facts (press sources, re-verify on YouTube pages before relying)
 YPP: 1,000 subs + 4,000 watch hours or 10M Shorts views in 90 days. From 1 Feb 2027 new applicants need 8,000 hours or 20M Shorts views. Fan-funding tier (500 subs, 3 uploads, 3,000 hours or 3M Shorts views). Shorts hours do not count toward long-form hours. July 2026: no monetisation for generic, repetitive, template-based content. Realistic: apply before 1 Feb 2027 if thresholds are near, otherwise plan for the higher bar.
