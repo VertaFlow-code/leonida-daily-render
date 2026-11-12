@@ -126,5 +126,6 @@
     }
    ]
   }
- ]
+ ],
+ "note": "re-render to test email delivery"
 }
