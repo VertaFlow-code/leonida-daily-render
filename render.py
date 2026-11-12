@@ -261,6 +261,14 @@ def main():
 
     tmp = tempfile.mkdtemp(prefix="ld_")
     audio = fetch(mf["audio"], os.path.join(tmp, "voice.wav"))
+    if mf.get("tighten_pauses"):
+        # shorten every pause longer than ~0.5s down to 0.28s so the pace stays Shorts-tight
+        tight = os.path.join(tmp, "voice_tight.wav")
+        run(["ffmpeg", "-y", "-loglevel", "error", "-i", audio, "-af",
+             "silenceremove=stop_periods=-1:stop_duration=0.5:stop_threshold=-38dB:stop_silence=0.28",
+             tight])
+        print(f"tightened pauses: {probe_duration(audio):.1f}s -> {probe_duration(tight):.1f}s", flush=True)
+        audio = tight
 
     if mf.get("fit_audio"):
         # scene "duration" values are relative weights (e.g. word counts);

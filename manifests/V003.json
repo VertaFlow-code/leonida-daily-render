@@ -104,9 +104,8 @@
      "value": "Series S settings"
     },
     {
-     "label": "Game included",
-     "value": "No",
-     "tone": "bad"
+     "label": "Bought separately",
+     "value": "Yes"
     },
     {
      "label": "Standard edition",
@@ -128,5 +127,6 @@
   "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
   "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
   "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
- ]
+ ],
+ "tighten_pauses": true
 }
