@@ -60,6 +60,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_ID: ${{ github.run_id }}
+          MAIL_USER: ${{ secrets.MAIL_USER }}
+          MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
         run: |
           shopt -s nullglob
           for m in todo/*.json; do
@@ -68,5 +71,7 @@ jobs:
             gh release create "${id}-${RUN_ID}" "${id}.mp4" \
               --prerelease --title "${id}" \
               --notes "Rendered by workflow run ${RUN_ID}. Pending approval."
-            echo "Download: https://github.com/${GITHUB_REPOSITORY}/releases/download/${id}-${RUN_ID}/${id}.mp4"
+            url="https://github.com/${GITHUB_REPOSITORY}/releases/download/${id}-${RUN_ID}/${id}.mp4"
+            echo "Download: ${url}"
+            python email_video.py "${id}" "${id}.mp4" "${url}" || echo "Email step failed (video is still in Releases)"
           done
