@@ -252,6 +252,8 @@ class Canvas:
         self.cx = w // 2
         self.cw = min(w - 2 * self.mx, 940 if self.portrait else 1400)
         self.sprites = []
+        self.image = None
+        self.dim = 0.62
         self.bottom = self.y1 - self.S(80)
 
     def S(self, v):
@@ -615,6 +617,8 @@ def build_canvas(spec, dur, w, h, theme=None, motif=None, seed=""):
     layout = spec.get("layout", "stat")
     if layout not in LAYOUTS:
         raise ValueError(f"unknown card layout: {layout}")
+    cv.art = load_art(spec["image"], w, h) if spec.get("image") and os.path.exists(spec["image"]) else None
+    cv.dim = float(spec.get("image_dim", 0.62))
     y_end = LAYOUTS[layout](cv, spec)
     if layout in CENTERED:
         cv.center_stack(0, y_end)
@@ -622,7 +626,32 @@ def build_canvas(spec, dur, w, h, theme=None, motif=None, seed=""):
     return cv
 
 
+def load_art(path, w, h):
+    """Cover-fit an image to 1.18x the frame so it can slowly pan/zoom (Ken Burns)."""
+    im = Image.open(path).convert("RGB")
+    k = max(w * 1.18 / im.width, h * 1.18 / im.height)
+    return im.resize((int(im.width * k) + 1, int(im.height * k) + 1), RES)
+
+
+def art_frame(cv, art, t, w, h):
+    z = 1.0 - 0.06 * clamp(t / max(cv.dur, 0.1))
+    cw, ch = int(w * 1.18 * z / 1.18 * 1.18), int(h * 1.18 * z / 1.18 * 1.18)
+    cw, ch = min(cw, art.width), min(ch, art.height)
+    x0 = int((art.width - cw) * (0.35 + 0.3 * clamp(t / max(cv.dur, 0.1))))
+    y0 = int((art.height - ch) * 0.5)
+    fr = art.crop((x0, y0, x0 + cw, y0 + ch)).resize((w, h), Image.Resampling.BILINEAR)
+    shade = Image.new("RGB", (w, h), cv.t["bg"])
+    fr = Image.blend(fr, shade, cv.dim)
+    grad = Image.linear_gradient("L").resize((w, h))
+    return Image.composite(Image.new("RGB", (w, h), cv.t["bg"]), fr, grad.point(lambda v: int(v * 0.55)))
+
+
 def frame_at(cv, bg, t, w, h):
+    if getattr(cv, "art", None) is not None:
+        frame = art_frame(cv, cv.art, t, w, h)
+        for s in cv.sprites:
+            s.draw(frame, t)
+        return frame
     if cv.motif == "rings":
         ox = oy = 0
     else:

@@ -55,6 +55,12 @@ YPP: 1,000 subs + 4,000 watch hours or 10M Shorts views in 90 days. From 1 Feb 2
 ## Topic test (Altus, 2026-11-12: V003 was "who cares")
 A Short must pass: would a GTA fan send this to a friend or argue about it in the comments? Prefer (1) things fans can do or lose out on, (2) surprising "wait, that's real?" moments, (3) live debates, (4) dated events. Avoid spec-sheet facts (platform settings, file sizes) unless they change what the viewer does. Plain words, one idea, no jargon. Source mining: Reddit, Mashable and some sites block my tools (only search snippets), so use Rockstar Newswire, IGN, Kotaku, Game Informer-based reports, DICE/venue pages; Altus can paste hot Reddit links. Always confirm with a primary source before use.
 
+## Next up (queued by Altus 2026-11-12, run these tomorrow)
+- V004: "GTA 6 Festival" topic. Rockstar + PlayStation live event 21 Nov, Mana Wynwood, Miami; $60, ticket lottery, 17+, max 2 tickets, non-transferable, DICE waitlist; lineup Travis Scott, Don Toliver, Kodak Black and 15 more. Re-verify on Rockstar Newswire and the DICE page first (tickets may have sold out).
+- V005: Rockstar recreated the viral West Coast Customs Miami clip in-game (Kotaku, IGN; Rockstar Instagram story). Verify date and wording first; do not use the clip itself.
+- After that: weather (Game Informer via IGN), five named regions, then topics from the Topic test.
+Format for every Short now: 35-45 s, about 90-100 words, 6 cards with 3+ different layouts, scene art on 3-4 cards, "thumbnail" block, tighten_pauses true, audio_fx sfx true, 3 sources. Copy manifests/V003.json structure. Plain words a casual fan gets in one listen. Hook = a surprise or a stake in the first 2 s (never a spec).
+
 ## Topic backlog (verify each before use)
 Rockstar GTA 6 Festival Nov 21 Miami ($60, lottery, 17+); Rockstar recreated viral West Coast Customs Miami clip in-game; weather (hurricanes, rain in one part of map only; Game Informer); five named Leonida regions; Map size vs earlier games; file size smaller in Australia/Japan; Miami IRL event; Rockstar recreated viral Miami clip; 30 FPS debate; Q-bank (ld_questions) has the ~50 most-asked questions.
 

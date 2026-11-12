@@ -288,6 +288,8 @@ def main():
     for i, sc in enumerate(mf["scenes"]):
         seg = os.path.join(tmp, f"seg{i}.mp4")
         if sc.get("type") == "card":
+            if str(sc.get("image", "")).startswith("http"):
+                sc = dict(sc, image=fetch(sc["image"], os.path.join(tmp, f"art{i}.jpg")))
             info = cards.render_card_scene(sc, sc["duration"], seg, W, H, FPS, theme, motif, vid_id)
             card_log.append(info)
         else:
