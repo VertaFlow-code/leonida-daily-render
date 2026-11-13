@@ -24,9 +24,9 @@
    "type": "card",
    "layout": "stat",
    "duration": 11,
-   "kicker": "GTA 6 Festival \u00b7 Miami",
-   "value": "NOV 21",
-   "sub": "Mana Wynwood, Miami",
+   "kicker": "GTA 6 Festival",
+   "value": "MIAMI",
+   "sub": "November 21 \u00b7 Mana Wynwood",
    "note": "Lottery closed. One door left.",
    "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261113_053630_95cd5366-b0ff-4793-91f2-ef83cabd7137.png",
    "source": "Rockstar Games, GTA VI: The Festival page"
@@ -83,7 +83,8 @@
     }
    ],
    "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261113_053631_d95d0bf5-eff7-41c5-9f65-c61f670719b9.png",
-   "source": "Rockstar Games festival page; DICE"
+   "source": "Rockstar Games festival page; DICE",
+   "image_dim": 0.76
   },
   {
    "type": "card",
