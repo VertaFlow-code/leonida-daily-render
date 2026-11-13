@@ -1,0 +1,150 @@
+{
+ "id": "V004",
+ "title": "Missed the GTA 6 festival lottery? Here's how you can still get in",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261113_053628_78b55452-9c0f-40bb-ba82-bc2b75245859.wav",
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "script": "Missed the GTA 6 festival lottery? One door is still open. Rockstar's launch party is November 21 in Miami, with Travis Scott, Cardi B and Metro Boomin. Tickets are $60, two per person, 17 plus. The lottery closed November 10th, but there's a waitlist on DICE. When a winner can't go, they relist at the same price, and the waitlist buys in order. Sell a ticket off the app and it's cancelled, no refund. Would you pay $60 to party with GTA 6? Comment below.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 11,
+   "kicker": "GTA 6 Festival \u00b7 Miami",
+   "value": "NOV 21",
+   "sub": "Mana Wynwood, Miami",
+   "note": "Lottery closed. One door left.",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261113_053630_95cd5366-b0ff-4793-91f2-ef83cabd7137.png",
+   "source": "Rockstar Games, GTA VI: The Festival page"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 24,
+   "kicker": "The festival",
+   "rows": [
+    {
+     "label": "Performing",
+     "value": "Travis Scott"
+    },
+    {
+     "label": "Also",
+     "value": "Cardi B"
+    },
+    {
+     "label": "Also",
+     "value": "Metro Boomin"
+    },
+    {
+     "label": "Ticket price",
+     "value": "$60"
+    },
+    {
+     "label": "Age / limit",
+     "value": "17+ \u00b7 2 each"
+    }
+   ],
+   "source": "Rockstar Games, GTA VI: The Festival page; DICE"
+  },
+  {
+   "type": "card",
+   "layout": "timeline",
+   "duration": 11,
+   "kicker": "Ticket timeline",
+   "events": [
+    {
+     "date": "Nov 10",
+     "label": "Lottery closed",
+     "state": "done"
+    },
+    {
+     "date": "Nov 11",
+     "label": "Winners could buy",
+     "state": "done"
+    },
+    {
+     "date": "Nov 21",
+     "label": "Festival, doors 4 PM",
+     "state": "next"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261113_053631_d95d0bf5-eff7-41c5-9f65-c61f670719b9.png",
+   "source": "Rockstar Games festival page; DICE"
+  },
+  {
+   "type": "card",
+   "layout": "flow",
+   "duration": 17,
+   "kicker": "How the waitlist works",
+   "steps": [
+    {
+     "title": "Join the DICE waitlist",
+     "sub": "Order of joining counts"
+    },
+    {
+     "title": "A winner can't go",
+     "sub": "Relists at the same price"
+    },
+    {
+     "title": "You buy it",
+     "sub": "Next in line gets it"
+    }
+   ],
+   "source": "DICE event page FAQ"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 11,
+   "kicker": "Don't do this",
+   "title": "Resale rules",
+   "left": {
+    "label": "Relist on DICE",
+    "value": "OK",
+    "sub": "Same price only"
+   },
+   "right": {
+    "label": "Sell off the app",
+    "value": "CANCELLED",
+    "sub": "No refund"
+   },
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261113_053630_ef3e54f6-78aa-42c6-b952-b1f231e50ef0.png",
+   "source": "DICE event page FAQ"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 10,
+   "headline": "Would you pay $60 to party with GTA 6?",
+   "comment": "Comment below",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.rockstargames.com/VI/gtavi-thefestival",
+  "https://dice.fm/event/783n2v-grand-theft-auto-vi-the-festival-21st-nov-mana-wynwood-miami-tickets",
+  "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival"
+ ],
+ "tighten_pauses": true,
+ "thumbnail": {
+  "kicker": "GTA 6 \u00b7 Miami Nov 21",
+  "line1": "MISSED THE",
+  "line2": "LOTTERY?",
+  "line3": "GTA 6 FESTIVAL",
+  "badge": "Waitlist open"
+ }
+}
