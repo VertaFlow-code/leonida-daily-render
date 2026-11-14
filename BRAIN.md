@@ -1,6 +1,6 @@
 # Leonida Daily: BRAIN (read this first in every new chat or scheduled run)
 
-Last updated: 2026-11-13. Update this file whenever something durable changes.
+Last updated: 2026-11-14. Update this file whenever something durable changes.
 
 ## Mission
 Faceless, AI-run YouTube channel "Leonida Daily" (@leonidaDaily-o3w) about GTA / GTA 6 (launch Nov 19, 2026).
@@ -33,6 +33,9 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 - V003 "An Xbox One can't install GTA 6, it's getting it day one anyway": rendered (42 s), QC gate passed after 1 loop, video and approval pack emailed 2026-11-12. POSTED by Altus 2026-11-12: https://youtube.com/shorts/34tRZOuBXT4 (I could not read title or stats from the page; check stats next day). Sources: Xbox Wire 10 Nov, Rockstar Newswire 10 Nov and 3 Nov. After posting: log in ld_videos, check stats next day.
 - V004 "Missed the GTA 6 festival lottery? Here's how you can still get in": QC pass after 2 loops (hook card first showed only MIAMI; fixed to carry the stake), 36.8 s, approved and emailed 2026-11-13. Verified on Rockstar festival page + DICE: Nov 21, Mana Wynwood, $60, lottery closed 10 Nov, waitlist on DICE, relist at same price only, off-app resale = cancelled no refund, 17+, max 2. NOTE: the 'Next up' lineup (Travis Scott, Don Toliver, Kodak Black + 15 more) is right per Rockstar/DICE; I only named Travis Scott, Cardi B, Metro Boomin.
 - V005 "That 'real Miami' clip is actually GTA 6": QC pass loop 1, 41 s, approved and emailed 2026-11-13. Sources Kotaku 11 Nov (primary for the claim), IGN (page blocked for my tools, search snippet only), IGN real-car piece. Jason and Lucia on sidewalk = unconfirmed fan claim, labelled. No stats screenshots received for V003 yet.
+- V006 "GTA 6 is 30 FPS even on PS5 Pro. Fine, or a dealbreaker?": QC pass loop 1, 41 s, approved and emailed 2026-11-14. Sources Rockstar Newswire 10 Nov (primary, says "targeting 30"), Kotaku 10 + 11 Nov, IGN (snippet only). Rockstar wording is "targeting", not "locked".
+- V007 "Rockstar and PlayStation disagree on GTA 6's unlock time": QC pass loop 1, 44 s, approved and emailed 2026-11-14. Rockstar support: midnight local time all regions; PlayStation blog: rolling midnight by country; US west coast unresolved (Digital Foundry asked Rockstar). Time-sensitive; re-check before posting.
+- Next up after V007: weather (Game Informer 29 Sep), six regions, Logitech day off, Japan/Australia file size, launch-night topics, review embargo (reported 18 Nov, unconfirmed).
 - Learned: stat cards animate numbers (count-up flashes a wrong date, avoid numeric hook values); put the stake in the hook card, not just the captions; release asset download works via gh api octet-stream; render takes ~5 min and can run both manifests in one push.
 - Next up now: weather (Game Informer via IGN), five named regions, 30 FPS debate (Kotaku 11 Nov), file size smaller in Australia/Japan (Kotaku 11 Nov, censorship angle, verify), Logitech giving 7,000 staff launch day off (Kotaku 11 Nov, light), launch-night topics (Nov 19).
 - cards.py (7 layouts) and variety_check.py are in the repo and used by render.yml. Montserrat only exists on the runner, so local previews use DejaVu.
