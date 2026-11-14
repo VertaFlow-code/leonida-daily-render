@@ -1,0 +1,128 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V007",
+ "title": "Rockstar and PlayStation disagree on GTA 6's unlock time",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053421_0dd28b36-cc9b-40f1-9962-f4bb2442bd90.wav",
+ "script": "Rockstar and PlayStation seem to disagree about when GTA 6 unlocks. Rockstar's support page says midnight local time on November 19, in all regions. PlayStation's blog says a rolling midnight launch by country, starting in New Zealand. For small countries, that's the same thing. But in places with several time zones, like the United States, the west coast could start the night before, or wait for its own midnight. Digital Foundry asked Rockstar which is right. I couldn't find an answer yet. Until then, check the countdown on your console after pre-load. When does yours unlock? Comment your country.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 11,
+   "kicker": "GTA 6 · Unlock time",
+   "value": "WHO'S RIGHT?",
+   "sub": "Rockstar vs PlayStation",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053424_fd7d3a62-2fed-4fff-9bd6-99d0a64ee971.png",
+   "source": "Rockstar Support; PlayStation Blog"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 26,
+   "kicker": "Two official wordings",
+   "title": "Unlock rule",
+   "left": {
+    "label": "Rockstar support",
+    "value": "MIDNIGHT",
+    "sub": "Local time, all regions"
+   },
+   "right": {
+    "label": "PlayStation blog",
+    "value": "BY COUNTRY",
+    "sub": "Rolling, New Zealand first"
+   },
+   "source": "Rockstar Support (3 Nov); PlayStation Blog (10 Nov)"
+  },
+  {
+   "type": "card",
+   "layout": "timeline",
+   "duration": 33,
+   "kicker": "US west coast, two readings",
+   "events": [
+    {
+     "date": "Nov 18, 9 PM",
+     "label": "Pacific, if by country",
+     "state": "next"
+    },
+    {
+     "date": "Nov 19, 12 AM",
+     "label": "Pacific, if by time zone",
+     "state": "next"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053424_378d5322-c67f-472b-9904-750031251851.png",
+   "image_dim": 0.78,
+   "source": "Digital Foundry, 10 Nov; Forbes, 12 Nov"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 14,
+   "kicker": "Which one wins?",
+   "value": "UNCONFIRMED",
+   "sub": "No answer found yet",
+   "note": "Digital Foundry asked Rockstar",
+   "tone": "bad",
+   "source": "Digital Foundry, 10 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "flow",
+   "duration": 11,
+   "kicker": "How to check yours",
+   "steps": [
+    {
+     "title": "Pre-load the game",
+     "sub": "On your console"
+    },
+    {
+     "title": "Open its page",
+     "sub": "After pre-load"
+    },
+    {
+     "title": "Read the countdown",
+     "sub": "That's your unlock"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053424_1a87a5ce-a72a-4e75-a420-109eef87800b.png",
+   "image_dim": 0.78,
+   "source": "Digital Foundry, 10 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 7,
+   "headline": "When does yours unlock?",
+   "comment": "Comment your country",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s",
+  "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+  "https://www.digitalfoundry.net/news/2026/11/rockstar-officially-confirms-gta-6-regional-release-times-and-theyre-not-what-we-thought"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 · Launch night",
+  "line1": "UNLOCK TIME",
+  "line2": "THEY DISAGREE",
+  "line3": "CHECK YOURS",
+  "badge": "Nov 19"
+ }
+}

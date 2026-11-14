@@ -1,0 +1,130 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V006",
+ "title": "GTA 6 is 30 FPS even on PS5 Pro. Fine, or a dealbreaker?",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053421_7793b80e-9756-4f9d-94a8-bc66d7f4acc6.wav",
+ "script": "Even on PS5 Pro, GTA 6 targets 30 frames per second. Rockstar confirmed it on November 10, and no 60 mode is announced. Note it says targeting, not locked. The Pro does get sharper upscaling and ray traced shadows. Rockstar says it's keeping the full density and detail of Leonida. Some fans call 30 a dealbreaker. Others note no modern Rockstar game has launched at 60, and that Starfield got savaged for 30 too. Is 30 fine for a world this detailed, or a dealbreaker for you? Comment your side.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 10,
+   "kicker": "GTA 6 · PS5 Pro",
+   "value": "THIRTY FPS",
+   "sub": "Even on PS5 Pro",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053423_3ea2324c-fde5-485f-963d-013f0d656b4b.png",
+   "source": "Rockstar Newswire, 10 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 18,
+   "kicker": "What Rockstar said",
+   "rows": [
+    {
+     "label": "Frame rate",
+     "value": "Targeting 30"
+    },
+    {
+     "label": "60 FPS mode",
+     "value": "Not announced"
+    },
+    {
+     "label": "Wording",
+     "value": "\"Targeting\""
+    }
+   ],
+   "source": "Rockstar Newswire, 10 Nov 2026; Kotaku"
+  },
+  {
+   "type": "card",
+   "layout": "flow",
+   "duration": 21,
+   "kicker": "What the Pro adds",
+   "steps": [
+    {
+     "title": "Sharper image",
+     "sub": "PSSR upscaling"
+    },
+    {
+     "title": "Ray-traced shadows",
+     "sub": "PS5 Pro only"
+    },
+    {
+     "title": "Full detail kept",
+     "sub": "Density of Leonida"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053423_4926bbd9-6684-4457-ace8-a2b7f71dcf8c.png",
+   "image_dim": 0.78,
+   "source": "Rockstar Newswire, 10 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 16,
+   "kicker": "The fan split",
+   "title": "Is 30 FPS OK?",
+   "left": {
+    "label": "Some fans",
+    "value": "DEALBREAKER",
+    "sub": "Too low in 2026"
+   },
+   "right": {
+    "label": "Others",
+    "value": "FAIR",
+    "sub": "No modern Rockstar launch hit 60"
+   },
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053423_eb3b5001-5737-4a3c-b1c5-13370a567a24.png",
+   "image_dim": 0.8,
+   "source": "Kotaku, 11 Nov 2026; IGN"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 8,
+   "kicker": "Same row before",
+   "value": "STARFIELD",
+   "sub": "Savaged for 30 FPS too",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261114_053423_a3abf727-4e16-4f6c-938c-4489024e5d16.png",
+   "source": "Kotaku, 11 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 16,
+   "headline": "30 FPS: fine, or dealbreaker?",
+   "comment": "Comment your side",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+  "https://kotaku.com/gta-6-30-fps-confirmed-ps5-pro-pssr-xbox-cloud-streaming-2000755517",
+  "https://kotaku.com/some-players-are-crashing-out-about-gta-6-only-being-30-fps-starfield-got-assaulted-for-being-locked-to-30-fps-2000755892",
+  "https://www.ign.com/articles/gta-6-fans-are-divided-over-confirmation-of-30fps"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 · PS5 Pro",
+  "line1": "STILL 30 FPS",
+  "line2": "EVEN ON PRO",
+  "line3": "DEALBREAKER?",
+  "badge": "Rockstar confirmed"
+ }
+}
