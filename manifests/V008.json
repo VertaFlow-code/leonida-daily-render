@@ -18,8 +18,8 @@
  "tighten_pauses": true,
  "id": "V008",
  "title": "GTA 6 can rain in one place while you stand in sunshine",
- "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261115_053233_50ba8850-c837-408f-8c9e-3ca0d3ca0d30.wav",
- "script": "GTA 6 can rain on one part of the map while you stand in sunshine. Rockstar says the storms are localized. You can spot one pouring in the distance, then drive there afterwards, and the puddles are still on the ground. You can even catch a rainbow after a fresh shower. Leonida also gets tropical storms and hurricanes, just like real Florida. How often they hit, and what they do to gameplay, hasn't been revealed yet. Would you drive through a hurricane, or wait it out? Comment your pick.",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261115_053747_ff19ce0a-ae21-4580-b834-85c38bced2eb.wav",
+ "script": "GTA 6 can rain on one part of the map while you stand in sunshine. Rockstar says the storms are localized. You can spot one pouring in the distance, then drive there afterwards, and the puddles are still on the ground. Dynamic clouds also roll across Leonida, from clear skies to cloudy days. You can even catch a rainbow after a fresh shower. Leonida also gets tropical storms and hurricanes, just like real Florida. How often they hit, and what they do to gameplay, hasn't been revealed yet. Would you drive through a hurricane, or wait it out? Comment your pick.",
  "scenes": [
   {
    "type": "card",
@@ -55,9 +55,13 @@
   {
    "type": "card",
    "layout": "list",
-   "duration": 10,
+   "duration": 20,
    "kicker": "Confirmed by Rockstar",
    "rows": [
+    {
+     "label": "Moving clouds",
+     "value": "Yes"
+    },
     {
      "label": "Localized storms",
      "value": "Yes"
