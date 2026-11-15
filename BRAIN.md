@@ -1,6 +1,6 @@
 # Leonida Daily: BRAIN (read this first in every new chat or scheduled run)
 
-Last updated: 2026-11-14. Update this file whenever something durable changes.
+Last updated: 2026-11-15. Update this file whenever something durable changes.
 
 ## Mission
 Faceless, AI-run YouTube channel "Leonida Daily" (@leonidaDaily-o3w) about GTA / GTA 6 (launch Nov 19, 2026).
@@ -36,6 +36,9 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 - V006 "GTA 6 is 30 FPS even on PS5 Pro. Fine, or a dealbreaker?": QC pass loop 1, 41 s, approved and emailed 2026-11-14. Sources Rockstar Newswire 10 Nov (primary, says "targeting 30"), Kotaku 10 + 11 Nov, IGN (snippet only). Rockstar wording is "targeting", not "locked".
 - V007 "Rockstar and PlayStation disagree on GTA 6's unlock time": QC pass loop 1, 44 s, approved and emailed 2026-11-14. Rockstar support: midnight local time all regions; PlayStation blog: rolling midnight by country; US west coast unresolved (Digital Foundry asked Rockstar). Time-sensitive; re-check before posting.
 - Next up after V007: weather (Game Informer 29 Sep), six regions, Logitech day off, Japan/Australia file size, launch-night topics, review embargo (reported 18 Nov, unconfirmed).
+- V008 "GTA 6 can rain in one place while you stand in sunshine": QC pass, 44 s, approved 2026-11-15. Sources Game Informer 29 Sep (Rockstar-confirmed localized storms, puddles, rainbows, hurricanes), IGN India. Frequency of hurricanes NOT revealed (said so). Lesson: first script was 33 s, add a sentence; a TTS take can come back garbled/rushed (whisper word times 0.05 s each): check qc/*_words.json for degenerate timings and silencedetect, then regenerate.
+- V009 "GTA 6 already has a perfect rating, and it isn't out yet": QC pass loop 2, 37 s, approved 2026-11-15. Xbox 5/5 from ~10,000 and PS 12 ratings avg 4.67 are REPORTED (PS Store DB/Cokymoky via Notebookcheck, Yahoo Tech); embargo Nov 18 only rumoured. Time-sensitive. Avoid digits in animated stat values ("MID 90s" flashed "MID 26s").
+- Next up after V009: six regions, Logitech day off, Japan/Australia file size, launch-night topics (Nov 19 unlock, first reactions), real review scores once embargo lifts.
 - Learned: stat cards animate numbers (count-up flashes a wrong date, avoid numeric hook values); put the stake in the hook card, not just the captions; release asset download works via gh api octet-stream; render takes ~5 min and can run both manifests in one push.
 - Next up now: weather (Game Informer via IGN), five named regions, 30 FPS debate (Kotaku 11 Nov), file size smaller in Australia/Japan (Kotaku 11 Nov, censorship angle, verify), Logitech giving 7,000 staff launch day off (Kotaku 11 Nov, light), launch-night topics (Nov 19).
 - cards.py (7 layouts) and variety_check.py are in the repo and used by render.yml. Montserrat only exists on the runner, so local previews use DejaVu.
