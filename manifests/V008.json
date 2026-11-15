@@ -1,0 +1,129 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V008",
+ "title": "GTA 6 can rain in one place while you stand in sunshine",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261115_053233_50ba8850-c837-408f-8c9e-3ca0d3ca0d30.wav",
+ "script": "GTA 6 can rain on one part of the map while you stand in sunshine. Rockstar says the storms are localized. You can spot one pouring in the distance, then drive there afterwards, and the puddles are still on the ground. You can even catch a rainbow after a fresh shower. Leonida also gets tropical storms and hurricanes, just like real Florida. How often they hit, and what they do to gameplay, hasn't been revealed yet. Would you drive through a hurricane, or wait it out? Comment your pick.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 13,
+   "kicker": "GTA 6 \u00b7 Weather",
+   "value": "RAIN HERE, SUN THERE",
+   "sub": "Storms stay in one part of the map",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261115_053250_4999f168-033c-4a52-a1ad-04aa813d9220.png",
+   "source": "Game Informer, 29 Sep 2026"
+  },
+  {
+   "type": "card",
+   "layout": "flow",
+   "duration": 27,
+   "kicker": "How a storm plays out",
+   "steps": [
+    {
+     "title": "Spot a storm",
+     "sub": "Pouring in the distance"
+    },
+    {
+     "title": "Wait for it to pass",
+     "sub": "Or drive straight in"
+    },
+    {
+     "title": "Drive there later",
+     "sub": "Puddles are still there"
+    }
+   ],
+   "source": "Game Informer, 29 Sep 2026"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 10,
+   "kicker": "Confirmed by Rockstar",
+   "rows": [
+    {
+     "label": "Localized storms",
+     "value": "Yes"
+    },
+    {
+     "label": "Lasting puddles",
+     "value": "Yes"
+    },
+    {
+     "label": "Rainbows",
+     "value": "After a shower"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261115_053251_1f39bfb3-15de-4d10-b776-3aaf0e700b7c.png",
+   "image_dim": 0.8,
+   "source": "Game Informer, 29 Sep 2026"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 11,
+   "kicker": "Just like Florida",
+   "title": "Storm season",
+   "left": {
+    "label": "Real Florida",
+    "value": "HURRICANES",
+    "sub": "Every season"
+   },
+   "right": {
+    "label": "Leonida",
+    "value": "HURRICANES",
+    "sub": "Confirmed"
+   },
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261115_053249_a1eb2697-4c83-4ad9-a4e3-7e216ee60df0.png",
+   "image_dim": 0.8,
+   "source": "Game Informer, 29 Sep 2026; IGN"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 14,
+   "kicker": "How often? What effect?",
+   "value": "NOT REVEALED",
+   "sub": "Rockstar hasn't said yet",
+   "tone": "bad",
+   "source": "Game Informer, 29 Sep 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 13,
+   "headline": "Drive through a hurricane, or wait it out?",
+   "comment": "Comment your pick",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-features-tropical-storms-and-hurricanes",
+  "https://in.ign.com/grand-theft-auto-vi/273158/rockstar-confirms-gta-6-simulates-tropical-storms-and-hurricanes",
+  "https://gameinformer.com/feature/2026/09/29/grand-theft-auto-vi-welcome-to-leonida"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 \u00b7 Weather",
+  "line1": "RAIN HERE",
+  "line2": "SUN THERE",
+  "line3": "HURRICANES TOO",
+  "badge": "Rockstar confirmed"
+ }
+}
