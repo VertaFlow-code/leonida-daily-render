@@ -1,0 +1,125 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V010",
+ "title": "GTA 6 launch day could cost America a billion dollars",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053333_984ab13d-971f-4e0b-8c58-f88869c82989.wav",
+ "script": "GTA 6 could cost America one billion dollars in a single day. One economist estimates one and a half million American workers will skip work on launch day. That's one percent of the workforce. In the UK, a survey says more than two and a half million will. BambooHR says time off requests for November 19th are nearly 13 percent higher than the same day in past years. Logitech is giving all seven thousand of its staff the day off. Remember, these are estimates, not facts. Are you calling in sick on Thursday? Comment yes or no.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 12,
+   "kicker": "GTA 6 \u00b7 Launch day",
+   "value": "A BILLION-DOLLAR SICK DAY",
+   "sub": "Estimated cost to the US in one day",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053335_a7ba5424-bb4c-4091-b815-4f02b91c8d91.png",
+   "source": "Fox 29 / International Business Times; Jerusalem Post, Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "bars",
+   "duration": 36,
+   "kicker": "Workers expected to skip launch day (millions)",
+   "items": [
+    {
+     "label": "United States",
+     "value": 1.5,
+     "display": "1.5M",
+     "highlight": true
+    },
+    {
+     "label": "United Kingdom",
+     "value": 2.56,
+     "display": "2.56M"
+    }
+   ],
+   "max": 3,
+   "note": "Estimates from an economist and a UK survey",
+   "source": "Jerusalem Post, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 20,
+   "kicker": "Time-off requests for Nov 19",
+   "rows": [
+    {
+     "label": "vs 2024 and 2025",
+     "value": "Up nearly 13%"
+    },
+    {
+     "label": "Workers planning leave",
+     "value": "Nearly 1 in 5"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053336_edd84e08-f94d-499d-832f-cf97b6e152cc.png",
+   "image_dim": 0.8,
+   "source": "CNBC, 14 Nov 2026 (BambooHR data)"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 12,
+   "kicker": "Some bosses gave in",
+   "value": "PAID DAY OFF FOR ALL",
+   "sub": "Logitech, every employee worldwide",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053335_f9f94a7c-4f64-41e5-8dfb-305b040f621d.png",
+   "image_dim": 0.8,
+   "source": "Jerusalem Post, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 6,
+   "kicker": "Read this part",
+   "title": "Estimates, not facts",
+   "left": {
+    "label": "The headline",
+    "value": "ONE BILLION",
+    "sub": "One economist's maths"
+   },
+   "right": {
+    "label": "The real count",
+    "value": "UNKNOWN",
+    "sub": "Only launch day will tell"
+   },
+   "source": "Fox 29 / IBT; Jerusalem Post"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 11,
+   "headline": "Calling in sick Thursday?",
+   "comment": "Comment yes or no",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.jpost.com/business-and-innovation/all-news/article-914933",
+  "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+  "https://www.fox29.com/news/gta-6-could-cause-1-billion-sick-day-1-5-million-estimated-skip-work-reports"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 \u00b7 Launch day",
+  "line1": "ONE BILLION",
+  "line2": "DOLLAR SICK DAY",
+  "line3": "WILL YOU CALL IN?",
+  "badge": "Nov 19"
+ }
+}

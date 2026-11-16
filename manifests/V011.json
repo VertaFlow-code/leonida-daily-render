@@ -1,0 +1,128 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V011",
+ "title": "GTA 6 won't let you steal a supercar on day one",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053333_a6bffcbf-2648-4c85-828a-c948a202ce24.wav",
+ "script": "In GTA 6, you can't steal a supercar on day one. Rockstar showed The Guardian that Jason and Lucia start out only able to hotwire cheap cars and pick basic locks. Better jobs unlock later. So instead of pulling a gun in a crowd, you scope out a target, disable cameras and find a back door. Skip the planning and it escalates fast. In the demo, a guard opened fire, then police cars and helicopters chased them. Rockstar says it won't punish players who go loud, but your actions will have some effect. Is this better, or less fun? Comment your pick.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 11,
+   "kicker": "GTA 6 \u00b7 Crime",
+   "value": "NO SUPERCAR ON DAY ONE",
+   "sub": "You start small and work up",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053335_89655efa-8021-4cec-8ede-814f4765938c.png",
+   "source": "The Guardian, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 24,
+   "kicker": "Jason and Lucia",
+   "title": "Start small, climb later",
+   "left": {
+    "label": "Day one",
+    "value": "CHEAP CARS",
+    "sub": "Hotwire and basic locks"
+   },
+   "right": {
+    "label": "Later",
+    "value": "BIGGER JOBS",
+    "sub": "Higher-value targets"
+   },
+   "source": "The Guardian, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "flow",
+   "duration": 21,
+   "kicker": "The careful way in",
+   "steps": [
+    {
+     "title": "Scope the target",
+     "sub": "Before you act"
+    },
+    {
+     "title": "Disable cameras",
+     "sub": "Or steal the footage"
+    },
+    {
+     "title": "Find a back door",
+     "sub": "And the safe code"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053335_a715e8fe-af2d-499b-acd2-1ed18c19282c.png",
+   "image_dim": 0.8,
+   "source": "The Guardian; Notebookcheck, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 21,
+   "kicker": "Skip the planning, in the demo",
+   "rows": [
+    {
+     "label": "Upstairs guard",
+     "value": "Opened fire"
+    },
+    {
+     "label": "Police",
+     "value": "Cars + helicopters"
+    },
+    {
+     "label": "Jason and Lucia",
+     "value": "Lay low till it cools"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261116_053335_626b0ec9-ff08-40a6-b8e3-51bfcaad6028.png",
+   "image_dim": 0.8,
+   "source": "The Guardian, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 16,
+   "kicker": "Rob Nelson, Rockstar North",
+   "value": "NOT PUNISHED",
+   "sub": "But your actions have some effect",
+   "source": "The Guardian; Rock Paper Shotgun, 14-15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 9,
+   "headline": "Better, or less fun?",
+   "comment": "Comment your pick",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+  "https://www.notebookcheck.net/GTA-VI-is-the-first-Grand-Theft-Auto-built-to-encourage-empathy-says-Rockstar-but-it-won-t-punish-chaotic-players-either.1451049.0.html",
+  "https://www.rockpapershotgun.com/congratulations-to-people-who-feel-mean-shooting-random-npcs-because-gta-6-tries-to-provide-mechanisms-that-encourage-empathy"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 \u00b7 Crime",
+  "line1": "NO SUPERCAR",
+  "line2": "ON DAY ONE",
+  "line3": "BETTER OR WORSE?",
+  "badge": "Nov 19"
+ }
+}
