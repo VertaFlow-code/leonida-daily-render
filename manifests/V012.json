@@ -1,0 +1,129 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V012",
+ "title": "Rockstar could have made GTA 5.5 faster. It chose 13 years instead",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053408_714086e8-4514-4290-bcbe-e947e81cdd95.wav",
+ "script": "Rockstar says it could have made GTA 5.5 and shipped it faster. It chose 13 years instead. Rockstar told The Guardian the team wanted a big swing, not more of the same. The studio has worked on GTA 6 since 2015, and the team is four times bigger than on GTA 5. Independent estimates say it cost over a billion dollars, but Rockstar won't confirm that. GTA 5 sold 230 million copies. So was the wait worth it, or should Rockstar have played it safe? Comment your pick.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 17,
+   "kicker": "GTA 6 \u00b7 Why so long",
+   "value": "NO GTA 5.5",
+   "sub": "Faster was possible. They passed.",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053412_573470e8-3866-4af8-a044-db4cd425a8ec.png",
+   "source": "The Guardian, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "timeline",
+   "duration": 25,
+   "kicker": "The long road",
+   "events": [
+    {
+     "date": "2013",
+     "label": "GTA 5 comes out",
+     "state": "done"
+    },
+    {
+     "date": "2015",
+     "label": "Work on GTA 6 starts",
+     "state": "done"
+    },
+    {
+     "date": "Nov 19, 2026",
+     "label": "GTA 6 launches",
+     "state": "next"
+    }
+   ],
+   "source": "The Guardian, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "bars",
+   "duration": 11,
+   "kicker": "Team size",
+   "items": [
+    {
+     "label": "GTA 5 team",
+     "value": 1,
+     "display": "BASE"
+    },
+    {
+     "label": "GTA 6 team",
+     "value": 4,
+     "display": "4X",
+     "highlight": true
+    }
+   ],
+   "source": "The Guardian, 15 Nov 2026 (team size quadrupled since GTA V)"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 14,
+   "kicker": "Estimated cost",
+   "value": "OVER A BILLION",
+   "sub": "Independent estimate. Rockstar won't confirm.",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053412_747c7360-b8b7-4f62-9457-ce7e2382ee8c.png",
+   "source": "The Guardian, 15 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 21,
+   "kicker": "Safe, or bold?",
+   "title": "Was the wait worth it?",
+   "left": {
+    "label": "GTA 5.5",
+    "value": "FASTER",
+    "sub": "More of the same"
+   },
+   "right": {
+    "label": "GTA 6",
+    "value": "A BIG SWING",
+    "sub": "13 years in the making"
+   },
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053412_135b41bb-63f1-4c26-b504-840076aa7eb2.png",
+   "image_dim": 0.8,
+   "source": "The Guardian, 15 Nov 2026; GameSpot, 16 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 3,
+   "headline": "Worth the wait?",
+   "comment": "Comment your pick",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+  "https://www.gamespot.com/articles/rockstar-could-have-released-gta-6-sooner-as-gta-5-5-but-you-have-to-take-big-swings/",
+  "https://www.ggrecon.com/articles/gta-6-empathy-rockstar-guardian/"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 \u00b7 Why so long",
+  "line1": "NO GTA 5.5",
+  "line2": "13 YEARS",
+  "line3": "WORTH IT?",
+  "badge": "Nov 19"
+ }
+}

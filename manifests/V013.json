@@ -1,0 +1,130 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V013",
+ "title": "Play GTA 6 up to 18 hours early? Here's the catch",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053410_e1e73e8b-4898-44f9-8b71-f10efe77de4e.wav",
+ "script": "You can play GTA 6 up to 18 hours early in the US. But there's a catch. New Zealand unlocks first, at midnight on November 19, which is 6 a.m. Eastern on the 18th. On Xbox, people set their console location to New Zealand. On PlayStation, you need a new New Zealand account and must pay in New Zealand dollars. Rockstar hasn't confirmed it works, and it may break Sony and Microsoft rules. Twitch reportedly warned one streamer about a ban. Risk it, or wait? Comment your pick.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 16,
+   "kicker": "GTA 6 \u00b7 Unlock trick",
+   "value": "PLAY GTA 6 EARLY?",
+   "sub": "There's a catch",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053413_0820ffd4-d3c8-4c2f-a4fc-996c7a886cf9.png",
+   "source": "Notebookcheck, 16 Nov; Rock Paper Shotgun, 13 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "timeline",
+   "duration": 18,
+   "kicker": "Who unlocks when",
+   "events": [
+    {
+     "date": "New Zealand",
+     "label": "Nov 19, midnight",
+     "state": "done"
+    },
+    {
+     "date": "US East Coast",
+     "label": "Nov 18, 6 AM",
+     "state": "next"
+    },
+    {
+     "date": "UK",
+     "label": "Nov 18, 11 AM",
+     "state": "next"
+    }
+   ],
+   "source": "Rock Paper Shotgun, 13 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 27,
+   "kicker": "How people do it",
+   "title": "Fake a New Zealand location",
+   "left": {
+    "label": "Xbox",
+    "value": "CHANGE LOCATION",
+    "sub": "A console setting"
+   },
+   "right": {
+    "label": "PlayStation",
+    "value": "NEW NZ ACCOUNT",
+    "sub": "Pay in NZ dollars"
+   },
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053412_9cdb5218-32dd-4371-9066-a7348966f7bd.png",
+   "image_dim": 0.8,
+   "source": "Rock Paper Shotgun, 13 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 21,
+   "kicker": "The catch",
+   "rows": [
+    {
+     "label": "Rockstar",
+     "value": "Not confirmed"
+    },
+    {
+     "label": "Sony + Microsoft",
+     "value": "May break rules"
+    },
+    {
+     "label": "Twitch",
+     "value": "Streamer warned"
+    }
+   ],
+   "source": "Notebookcheck, 16 Nov; Windows Central; KeenGamer"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 4,
+   "kicker": "Your call",
+   "value": "RISK IT OR WAIT?",
+   "sub": "Few punishments reported so far",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053412_7f5de4fc-bc0c-41c4-bb86-dd4036b52209.png",
+   "source": "Notebookcheck, 16 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 3,
+   "headline": "Risk it, or wait?",
+   "comment": "Comment your pick",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.rockpapershotgun.com/gta-6-new-zealand-trick",
+  "https://www.notebookcheck.net/Streamer-faces-ban-for-using-GTA-6-early-unlock-time-trick-on-release-date.1451653.0.html",
+  "https://www.keengamer.com/articles/news/buckle-up-gta-6-is-less-than-48-hours-away-with-the-new-zealand-trick/"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 \u00b7 Early access",
+  "line1": "PLAY GTA 6",
+  "line2": "18 HOURS EARLY",
+  "line3": "THE CATCH",
+  "badge": "Nov 18"
+ }
+}
