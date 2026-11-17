@@ -98,18 +98,8 @@
   },
   {
    "type": "card",
-   "layout": "stat",
-   "duration": 4,
-   "kicker": "Your call",
-   "value": "RISK IT OR WAIT?",
-   "sub": "Few punishments reported so far",
-   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261117_053412_7f5de4fc-bc0c-41c4-bb86-dd4036b52209.png",
-   "source": "Notebookcheck, 16 Nov 2026"
-  },
-  {
-   "type": "card",
    "layout": "cta",
-   "duration": 3,
+   "duration": 7,
    "headline": "Risk it, or wait?",
    "comment": "Comment your pick",
    "button": "Subscribe"

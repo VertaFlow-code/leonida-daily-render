@@ -88,7 +88,7 @@
   {
    "type": "card",
    "layout": "versus",
-   "duration": 21,
+   "duration": 11,
    "kicker": "Safe, or bold?",
    "title": "Was the wait worth it?",
    "left": {
@@ -108,7 +108,7 @@
   {
    "type": "card",
    "layout": "cta",
-   "duration": 3,
+   "duration": 10,
    "headline": "Worth the wait?",
    "comment": "Comment your pick",
    "button": "Subscribe"
