@@ -1,6 +1,6 @@
 # Leonida Daily: BRAIN (read this first in every new chat or scheduled run)
 
-Last updated: 2026-11-16. Update this file whenever something durable changes.
+Last updated: 2026-11-17. Update this file whenever something durable changes.
 
 ## Mission
 Faceless, AI-run YouTube channel "Leonida Daily" (@leonidaDaily-o3w) about GTA / GTA 6 (launch Nov 19, 2026).
@@ -40,6 +40,9 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 - V009 "GTA 6 already has a perfect rating, and it isn't out yet": QC pass loop 2, 37 s, approved 2026-11-15. Xbox 5/5 from ~10,000 and PS 12 ratings avg 4.67 are REPORTED (PS Store DB/Cokymoky via Notebookcheck, Yahoo Tech); embargo Nov 18 only rumoured. Time-sensitive. Avoid digits in animated stat values ("MID 90s" flashed "MID 26s").
 - V010 "GTA 6 launch day could cost America a billion dollars": QC pass loop 1, 39.7 s, approved 2026-11-16. Estimates only (economist Montalvo: 1.5M US workers, ~$1B; Uswitch 2.56M UK via JPost; BambooHR requests up nearly 13% per CNBC; Logitech day off). Labelled as estimates. Time-sensitive: launch is Thursday Nov 19.
 - V011 "GTA 6 won't let you steal a supercar on day one": QC pass loop 1, 45.1 s (top of range), approved 2026-11-16. Source Guardian hands-on 15 Nov (Rockstar-led demo, early game): start with low-end cars and basic locks, planned crime, Nelson "not punishing... actions will have some effect"; Notebookcheck, RPS.
+- V012 "Rockstar could have made GTA 5.5 faster. It chose 13 years instead": QC pass loop 1, 37.5 s, approved 2026-11-17. Sources Guardian 15 Nov (primary), GameSpot 16 Nov, GGRecon. >$1bn cost = independent estimate, labelled. Kolbe's job title differs per outlet, say 'Rockstar'.
+- V013 "Play GTA 6 up to 18 hours early? Here's the catch": QC pass loop 1, 40.7 s, approved 2026-11-17. NZ unlock trick (RPS 13 Nov, Notebookcheck 16 Nov, KeenGamer/Windows Central); framed as risk, not a how-to; Twitch warning is a reported social-media claim. Time-sensitive: post 17 Nov, NZ unlock ~13:00 SAST 18 Nov.
+- Lessons 2026-11-17: (1) NEVER put digits in a stat card 'value' (count-up flashed 'GTA 4.9' / 'GTA 5' in the hook); put numbers in sub/labels. (2) CTA card must carry the closing question's word weight (7-10), else Subscribe barely shows. (3) Next up: Polygon side activities (mini-golf, parachuting, gym), hold-hands/relationship decay, Criminal Profile levels, Game Awards nominations (17 Nov), post-launch first reactions/review scores, Weather Channel forecasts (tbreak 17 Nov), NBA 2K27 Vice City crossover, KFC fake funeral promo (GameSpot).
 - Next up after V011: Polygon side activities (mini-golf, parachuting, gym), hold-hands button / relationship decay (Guardian, Famitsu), Criminal Profile levels (Professional to Psycho), 62 bird types, review embargo/Game Awards, first-reactions after launch. Guardian is scrapeable (use it); IGN is not.
 - Next up after V009: six regions, Logitech day off, Japan/Australia file size, launch-night topics (Nov 19 unlock, first reactions), real review scores once embargo lifts.
 - Learned: stat cards animate numbers (count-up flashes a wrong date, avoid numeric hook values); put the stake in the hook card, not just the captions; release asset download works via gh api octet-stream; render takes ~5 min and can run both manifests in one push.
