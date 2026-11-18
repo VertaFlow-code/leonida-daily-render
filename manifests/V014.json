@@ -1,0 +1,148 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V014",
+ "title": "GTA 6 got eight Game Awards nominations before a single review",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261118_053336_841fef7c-b29c-4e66-8ab6-e1e6a877e385.wav",
+ "script": "GTA 6 just got eight Game Awards nominations, before a single review. The nominations came out on November 17. That includes Game of the Year, Best Narrative, and Best Game Direction. It's the most nominated game of the show. It only qualifies because the cutoff is November 20, and it launches the 19th. Winners are 90 percent media jury votes and 10 percent fan votes, with the show on December 10. Fan voting opened even though nobody could play it yet. Some fans are calling it rigged. Fair, or too early? Comment your pick.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 19,
+   "kicker": "GTA 6 · Game Awards",
+   "value": "NOMINATED BEFORE A SINGLE REVIEW",
+   "sub": "Announced Nov 17",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261118_053340_acc04f81-12bc-4518-b7a5-3dc17460911e.png",
+   "source": "Kotaku, 17 Nov 2026 (Game Awards nominees and nomination explainer)"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 20,
+   "kicker": "Most-nominated game of the show",
+   "rows": [
+    {
+     "label": "Game of the Year",
+     "value": "Nominated"
+    },
+    {
+     "label": "Best Narrative",
+     "value": "Nominated"
+    },
+    {
+     "label": "Best Game Direction",
+     "value": "Nominated"
+    },
+    {
+     "label": "Total nominations",
+     "value": "Eight"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261118_053340_ae73a0f1-92ed-4469-8205-10365774cea9.png",
+   "image_dim": 0.8,
+   "source": "Kotaku, 17 Nov 2026 (full nominee list)"
+  },
+  {
+   "type": "card",
+   "layout": "timeline",
+   "duration": 14,
+   "kicker": "Why it squeaks in",
+   "events": [
+    {
+     "date": "Nov 17",
+     "label": "Nominees announced",
+     "state": "done"
+    },
+    {
+     "date": "Nov 19",
+     "label": "GTA 6 launches",
+     "state": "next"
+    },
+    {
+     "date": "Nov 20",
+     "label": "Eligibility cutoff",
+     "state": "next"
+    }
+   ],
+   "source": "Kotaku, 17 Nov 2026 (Game Awards nominees and nomination explainer)"
+  },
+  {
+   "type": "card",
+   "layout": "bars",
+   "duration": 18,
+   "kicker": "Who picks the winners (percent)",
+   "items": [
+    {
+     "label": "Media jury",
+     "value": 90,
+     "display": "90%",
+     "highlight": true
+    },
+    {
+     "label": "Fan vote",
+     "value": 10,
+     "display": "10%"
+    }
+   ],
+   "max": 100,
+   "note": "Show date: December 10",
+   "source": "Kotaku, 17 Nov 2026 (Game Awards nominees and nomination explainer)"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 16,
+   "kicker": "Fan reaction",
+   "title": "Is it fair?",
+   "left": {
+    "label": "Fair",
+    "value": "IT'S ELIGIBLE",
+    "sub": "It meets the cutoff"
+   },
+   "right": {
+    "label": "Rigged?",
+    "value": "TOO EARLY",
+    "sub": "Nobody could play it yet"
+   },
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261118_053340_daa74939-93d9-46d5-a2cd-8d0665f88ebe.png",
+   "image_dim": 0.8,
+   "source": "Kotaku, 17 Nov 2026; Polygon, 16 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 8,
+   "headline": "Fair, or too early?",
+   "comment": "Comment your pick",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://kotaku.com/game-awards-2026-nominations-gta-grand-theft-auto-6-lucia-2000757763",
+  "https://kotaku.com/game-awards-2026-nominees-of-the-year-gta-zelda-2000757724",
+  "https://www.polygon.com/gta-6-goty-nominations/"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 · Game Awards",
+  "line1": "GTA 6 NOMINATED",
+  "line2": "8 TIMES",
+  "line3": "BEFORE REVIEWS",
+  "badge": "Rigged?"
+ }
+}
