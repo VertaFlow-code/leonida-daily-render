@@ -1,0 +1,129 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V016",
+ "title": "GTA 6 just tied the highest Metacritic score ever. Deserved?",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053251_3349ae29-3a88-42cd-9771-8197658bf709.wav",
+ "script": "GTA 6 just tied the highest Metacritic score ever. 99 out of 100, level with Zelda: Ocarina of Time, from 1998. 118 critics gave it a perfect score. That's out of 147 reviews on PlayStation 5. One outlet gave it an 80. But some fans say a score this high can't be real, and the hype is doing the talking. Scores can still move as more reviews arrive. So is GTA 6 really a 99, or just hype? Comment which one.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 9,
+   "kicker": "GTA 6 · Metacritic",
+   "value": "TIES THE HIGHEST SCORE EVER",
+   "sub": "Critics' average, reported Nov 18",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053255_7cce5eb3-4452-4049-a46f-0c92b3da22ec.png",
+   "source": "Forbes, 18 Nov 2026; TechPowerUp, 18 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "versus",
+   "duration": 14,
+   "kicker": "Same Metascore",
+   "title": "28 years apart",
+   "left": {
+    "label": "GTA 6 (2026)",
+    "value": "TIED",
+    "sub": "Metascore 99"
+   },
+   "right": {
+    "label": "Zelda: Ocarina of Time (1998)",
+    "value": "TIED",
+    "sub": "Metascore 99"
+   },
+   "source": "Forbes, 18 Nov 2026; ABC News, 19 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "bars",
+   "duration": 19,
+   "kicker": "PS5 critic reviews on Metacritic",
+   "items": [
+    {
+     "label": "Perfect scores",
+     "value": 118,
+     "display": "118",
+     "highlight": true
+    },
+    {
+     "label": "All other scores",
+     "value": 29,
+     "display": "29"
+    }
+   ],
+   "max": 147,
+   "note": "147 reviews counted",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053255_d0a620f6-4b29-4614-86a1-182418cbc98c.png",
+   "image_dim": 0.8,
+   "source": "TechPowerUp, 18 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "list",
+   "duration": 24,
+   "kicker": "Not everyone's buying it",
+   "rows": [
+    {
+     "label": "Lowest score we found",
+     "value": "80 of 100"
+    },
+    {
+     "label": "Fan complaint",
+     "value": "\"It's the hype\""
+    },
+    {
+     "label": "Critics' answer",
+     "value": "Played for weeks"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053254_e6e069e7-04df-4f19-97b6-c804a7a650e1.png",
+   "image_dim": 0.8,
+   "source": "TechPowerUp, 18 Nov 2026; Forbes, 18 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 8,
+   "kicker": "Still early",
+   "value": "SCORES CAN STILL MOVE",
+   "sub": "More reviews are still arriving",
+   "source": "Forbes, 18 Nov 2026; TechPowerUp, 18 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 13,
+   "headline": "Deserved, or just hype?",
+   "comment": "Comment which one",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/",
+  "https://www.techpowerup.com/354998/gta-6-review-roundup-99-on-metacritic-and-118-perfect-scores",
+  "https://www.abc.net.au/news/2026-11-19/gta-vi-smashes-expectations-after-overnight-launch/107401924"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 · Metacritic",
+  "line1": "GTA 6 SCORES",
+  "line2": "99",
+  "line3": "TIES ZELDA RECORD",
+  "badge": "Deserved?"
+ }
+}

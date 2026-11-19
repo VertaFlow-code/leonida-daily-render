@@ -1,0 +1,130 @@
+{
+ "fit_audio": true,
+ "tail": 0.6,
+ "audio_fx": {
+  "sfx": true,
+  "sfx_volume": 0.2
+ },
+ "captions": {
+  "enabled": true,
+  "font": "Montserrat",
+  "font_size": 84,
+  "word_color": "C8B58A",
+  "line_color": "F2EFE9",
+  "outline_color": "1A1A1A",
+  "words_per_line": 3,
+  "margin_v": 360
+ },
+ "tighten_pauses": true,
+ "id": "V017",
+ "title": "GTA 6 just broke Australia's internet record on launch night",
+ "audio": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053250_5d75f93f-978c-4d8a-8286-d4e5cf544f6d.wav",
+ "script": "GTA 6 just broke Australia's internet record. On launch night, the national network peaked at 36.54 terabits per second. NBN Co says that's enough to download all 212 gigabytes of GTA 6 about 21 times every second. That's about 20 percent above a normal night. The old record was set only last week. In that week alone, Aussies downloaded roughly 70 petabytes extra, about 330,000 copies. Did you preload, or leave it to launch night? Comment which one.",
+ "scenes": [
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 7,
+   "kicker": "GTA 6 · Launch night",
+   "value": "AUSTRALIA'S INTERNET RECORD",
+   "sub": "Broken overnight, says NBN Co",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053255_f417b9e5-6d94-4651-bd7a-1e8c00e2ea69.png",
+   "source": "ABC News, 19 Nov 2026; GadgetGuy, 19 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "bars",
+   "duration": 15,
+   "kicker": "Peak traffic, terabits per second",
+   "items": [
+    {
+     "label": "Old record (last week)",
+     "value": 33.19,
+     "display": "33.19",
+     "highlight": false
+    },
+    {
+     "label": "Launch night",
+     "value": 36.54,
+     "display": "36.54",
+     "highlight": true
+    }
+   ],
+   "max": 40,
+   "note": "Both set within one week",
+   "source": "GadgetGuy, 19 Nov 2026; ABC News, 19 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "flow",
+   "duration": 21,
+   "kicker": "What that means",
+   "steps": [
+    {
+     "title": "One GTA 6 install",
+     "sub": "212 GB on PS5"
+    },
+    {
+     "title": "Downloaded 21 times",
+     "sub": "At the peak"
+    },
+    {
+     "title": "Every single second",
+     "sub": "Across the NBN"
+    }
+   ],
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053254_ef66e7c7-d08e-4d0f-8c2a-6bf35be9cdc8.png",
+   "image_dim": 0.8,
+   "source": "ABC News, 19 Nov 2026; GadgetGuy, 19 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "timeline",
+   "duration": 16,
+   "kicker": "A week of records",
+   "events": [
+    {
+     "date": "Last week",
+     "label": "Old record set",
+     "state": "done"
+    },
+    {
+     "date": "Launch night",
+     "label": "New record, about 20% above a normal night",
+     "state": "now"
+    }
+   ],
+   "source": "GadgetGuy, 19 Nov 2026; ABC News, 19 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "stat",
+   "duration": 17,
+   "kicker": "Pre-load week extra downloads",
+   "value": "HUNDREDS OF THOUSANDS OF COPIES",
+   "sub": "About 330,000 copies, roughly 70 petabytes extra, per NBN Co",
+   "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Lh3gaSoJDsjYAzqFyj65XamsxE/hf_20261119_053255_07ec5125-7952-4d01-8f40-cb1ef62fdeb8.png",
+   "source": "GadgetGuy, 19 Nov 2026"
+  },
+  {
+   "type": "card",
+   "layout": "cta",
+   "duration": 12,
+   "headline": "Preload, or last minute?",
+   "comment": "Comment which one",
+   "button": "Subscribe"
+  }
+ ],
+ "sources": [
+  "https://www.abc.net.au/news/2026-11-19/gta-vi-smashes-expectations-after-overnight-launch/107401924",
+  "https://www.gadgetguy.com.au/gta-6-breaks-two-australian-nbn-internet-records-in-one-week/",
+  "https://www.techradar.com/computing/wi-fi-broadband/no-gta-6-didnt-break-the-australian-internet-but-it-sure-did-break-records"
+ ],
+ "thumbnail": {
+  "kicker": "GTA 6 · Launch night",
+  "line1": "NEW NBN",
+  "line2": "RECORD",
+  "line3": "21 GTA 6s PER SECOND",
+  "badge": "Nov 19"
+ }
+}
