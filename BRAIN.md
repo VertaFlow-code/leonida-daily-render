@@ -1,6 +1,6 @@
 # Leonida Daily: BRAIN (read this first in every new chat or scheduled run)
 
-Last updated: 2026-11-18. Update this file whenever something durable changes.
+Last updated: 2026-11-19. Update this file whenever something durable changes.
 
 ## Mission
 Faceless, AI-run YouTube channel "Leonida Daily" (@leonidaDaily-o3w) about GTA / GTA 6 (launch Nov 19, 2026).
