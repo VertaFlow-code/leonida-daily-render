@@ -1,6 +1,6 @@
 # Leonida Daily: BRAIN (read this first in every new chat or scheduled run)
 
-Last updated: 2026-11-19. Update this file whenever something durable changes.
+Last updated: 2026-11-20. Update this file whenever something durable changes.
 
 ## Mission
 Faceless, AI-run YouTube channel "Leonida Daily" (@leonidaDaily-o3w) about GTA / GTA 6 (launch Nov 19, 2026).
@@ -55,6 +55,8 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 - Learned: stat cards animate numbers (count-up flashes a wrong date, avoid numeric hook values); put the stake in the hook card, not just the captions; release asset download works via gh api octet-stream; render takes ~5 min and can run both manifests in one push.
 - Next up now: weather (Game Informer via IGN), five named regions, 30 FPS debate (Kotaku 11 Nov), file size smaller in Australia/Japan (Kotaku 11 Nov, censorship angle, verify), Logitech giving 7,000 staff launch day off (Kotaku 11 Nov, light), launch-night topics (Nov 19).
 - cards.py (7 layouts) and variety_check.py are in the repo and used by render.yml. Montserrat only exists on the runner, so local previews use DejaVu.
+
+- 2026-11-20 RUN SKIPPED: Higgsfield balance 2.5 credits (seed_audio ~1.9 per 55 words, ~3-4 per Short). No V018/V019 made. Altus must top up, then re-run. Next IDs: V018, V019. Fresh topics: launch-day first reactions (ABC, USA Today, TechRadar live blog), PSN outage, side activities, hold hands. No stats replies found.
 
 ## Upgrades added 2026-11-12 (all 8 picked by Altus)
 1. DONE: layout-variety + sourcing guardrail (scripts/variety_check.py, runs before render, writes qc/<id>_variety.json).
