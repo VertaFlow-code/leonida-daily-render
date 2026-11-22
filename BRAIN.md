@@ -1,6 +1,6 @@
 # Leonida Daily: BRAIN (read this first in every new chat or scheduled run)
 
-Last updated: 2026-11-21. Update this file whenever something durable changes.
+Last updated: 2026-11-22. Update this file whenever something durable changes.
 
 ## Mission
 Faceless, AI-run YouTube channel "Leonida Daily" (@leonidaDaily-o3w) about GTA / GTA 6 (launch Nov 19, 2026).
@@ -56,6 +56,7 @@ Owner: Altus (Pretoria, SAST). Goal: passive, scalable income. YouTube only, 2 S
 - Next up now: weather (Game Informer via IGN), five named regions, 30 FPS debate (Kotaku 11 Nov), file size smaller in Australia/Japan (Kotaku 11 Nov, censorship angle, verify), Logitech giving 7,000 staff launch day off (Kotaku 11 Nov, light), launch-night topics (Nov 19).
 - cards.py (7 layouts) and variety_check.py are in the repo and used by render.yml. Montserrat only exists on the runner, so local previews use DejaVu.
 
+- 2026-11-22 RUN SKIPPED (3rd day): Higgsfield balance still 2.5 credits; seed_audio estimate 2.8 for ~70 words, so a 90-word Short (~3.6) is unaffordable. Nothing made; Altus must top up. Next IDs V018, V019. V004 (festival) and V005 were already made, so the old 'Next up' queue is done. Ideas: first-week reactions, PSN outage, side activities, hold hands, Criminal Profile. No stats replies found.
 - 2026-11-21 RUN SKIPPED AGAIN: Higgsfield balance still 2.5 credits (seed_audio estimate 2.4 for ~55 words, ~4 for a 90-word Short, plus images). Nothing made; Altus must top up. Next IDs V018, V019. Topic ideas: GTA 6 Festival tonight (Miami) reactions, first-week reactions, PSN outage, side activities, hold hands. No stats replies found.
 - 2026-11-20 RUN SKIPPED: Higgsfield balance 2.5 credits (seed_audio ~1.9 per 55 words, ~3-4 per Short). No V018/V019 made. Altus must top up, then re-run. Next IDs: V018, V019. Fresh topics: launch-day first reactions (ABC, USA Today, TechRadar live blog), PSN outage, side activities, hold hands. No stats replies found.
 
